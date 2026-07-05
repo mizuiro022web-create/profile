@@ -328,6 +328,40 @@
         .work-title { font-size: 2rem; margin-bottom: 1.5rem; }
         .work-desc { font-size: 0.95rem; color: #777; line-height: 1.8; }
 
+        .artist-links { display: flex; gap: 0.8rem; margin-top: 1.6rem; flex-wrap: wrap; }
+        .artist-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.55rem 1.3rem;
+            border: 1px solid #e2e2e2;
+            border-radius: 50px;
+            text-decoration: none;
+            color: var(--primary-color);
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            transition: all 0.3s;
+            background: white;
+        }
+        .artist-pill .play-icon {
+            width: 8px;
+            height: 8px;
+            background: #1DB954;
+            clip-path: polygon(0 0, 100% 50%, 0 100%);
+            display: inline-block;
+        }
+        .artist-pill .pill-sub {
+            font-weight: 400;
+            color: #999;
+            font-size: 0.75rem;
+        }
+        .artist-pill:hover {
+            border-color: var(--accent-pink);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+        }
+
         .slider-nav {
             display: flex;
             justify-content: center;
@@ -495,6 +529,10 @@
                                 <span class="work-num">FAVORITE 02</span>
                                 <h3 class="work-title">Urban R&B / Hip Hop</h3>
                                 <p class="work-desc">S.A.R.やHALLEYのような、シティ感あふれるアーバンなR&B&ヒップホップ。夜の街並みがよく似合う、おしゃれで洗練されたグルーヴ。</p>
+                                <div class="artist-links">
+                                    <a class="artist-pill" href="https://open.spotify.com/artist/34PVGf86Ys8Iso5hGXQcaW" target="_blank" rel="noopener"><span class="play-icon"></span>S.A.R.<span class="pill-sub">Spotify</span></a>
+                                    <a class="artist-pill" href="https://open.spotify.com/artist/0GUvlVXWnuFFfSeGZsVOW2" target="_blank" rel="noopener"><span class="play-icon"></span>HALLEY<span class="pill-sub">Spotify</span></a>
+                                </div>
                             </div>
                         </div>
                     </div>
