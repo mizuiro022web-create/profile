@@ -323,6 +323,19 @@
 
         .work-img-box { flex: 1; overflow: hidden; position: relative; }
         .work-img-box img { width: 100%; height: 100%; object-fit: cover; }
+        .img-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 4px;
+            width: 100%;
+            height: 100%;
+        }
+        .img-grid img:first-child { grid-row: 1 / 3; }
+        .img-grid img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        @media (max-width: 700px) {
+            .work-img-box { min-height: 320px; }
+        }
         .work-info-box { flex: 1; padding: 3rem; display: flex; flex-direction: column; justify-content: center; }
         .work-num { font-family: 'Italiana', serif; color: var(--accent-blue); font-size: 0.9rem; font-weight: 700; margin-bottom: 1rem; }
         .work-title { font-size: 2rem; margin-bottom: 1.5rem; }
@@ -537,12 +550,16 @@
                     <div class="slide active">
                         <div class="work-card">
                             <div class="work-img-box">
-                                <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=1000&auto=format&fit=crop" alt="Effortless Chic Fashion">
+                                <div class="img-grid">
+                                    <img src="images/look1.jpg" alt="Styling Look - Check Coat">
+                                    <img src="images/look2.jpg" alt="Styling Look - Burgundy Coat">
+                                    <img src="https://images.unsplash.com/photo-1467043237213-65f2da53396f?q=80&w=800&auto=format&fit=crop" alt="Nuance Color Wardrobe">
+                                </div>
                             </div>
                             <div class="work-info-box">
                                 <span class="work-num">FAVORITE 01</span>
                                 <h3 class="work-title">Effortless Chic</h3>
-                                <p class="work-desc">Deuxième ClasseやPlage、Whim Gazetteのような、上質なのに肩の力が抜けた大人のスタイル。2026SSはニュアンスカラーと、甘すぎないフリルディテールに注目しています。</p>
+                                <p class="work-desc">Deuxième ClasseやPlage、Whim Gazetteのような、上質なのに肩の力が抜けた大人のスタイル。リアルなルックで、ニュアンスカラーと素材感の組み合わせをご提案します。</p>
                             </div>
                         </div>
                     </div>
@@ -550,7 +567,7 @@
                     <div class="slide">
                         <div class="work-card">
                             <div class="work-img-box">
-                                <img src="https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1000&auto=format&fit=crop" alt="Tokyo Night Street">
+                                <img src="images/sar-spotify.jpg" alt="S.A.R." style="object-fit: contain; background: #cfc9c5; padding: 0;">
                             </div>
                             <div class="work-info-box">
                                 <span class="work-num">FAVORITE 02</span>
@@ -567,7 +584,11 @@
                     <div class="slide">
                         <div class="work-card">
                             <div class="work-img-box">
-                                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1000&auto=format&fit=crop" alt="Cafe Latte Art">
+                                <div class="img-grid">
+                                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1000&auto=format&fit=crop" alt="Bright Stylish Cafe">
+                                    <img src="https://images.unsplash.com/photo-1559496417-e7f25cb247f3?q=80&w=800&auto=format&fit=crop" alt="Espresso in Sunlight">
+                                    <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?q=80&w=800&auto=format&fit=crop" alt="Terrace Cafe Table">
+                                </div>
                             </div>
                             <div class="work-info-box">
                                 <span class="work-num">FAVORITE 03</span>
